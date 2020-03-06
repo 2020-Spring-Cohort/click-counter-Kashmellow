@@ -2,12 +2,7 @@ const getCookie = function(greeting) {
     return greeting;
 }
 
-function cookieClick() {
-
-    console.log('Click the Cookie!');
-}
-
-    var count = 0;
+var count = 0;
 const countButton = document.getElementById("countButton");
 const displayCount = document.getElementById("displayCount");
 countButton.onclick = function(){
@@ -19,3 +14,6 @@ resetButton.onclick = function(){
   displayCount.innerHTML = count;
 }
 
+if (displayCount === 10) {
+    alert("You have earned a Clicking Companion!");
+}

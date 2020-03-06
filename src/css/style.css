@@ -1,0 +1,45 @@
+body {
+    font-family: 'Signika', sans-serif;
+    background-color:#ffe97a;    
+    text-align: center;
+}
+
+
+
+#countButton {
+
+font-family: 'Signika', sans-serif;
+background-color: rgb(250, 252, 250); /* Green */
+border: none;
+color: #2f4f4f;
+padding: 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+border-radius: 12px;
+}
+
+#countButton:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#resetButton {
+
+    font-family: 'Signika', sans-serif;
+    background-color: rgb(250, 252, 250); /* Green */
+    border: none;
+    color: #2f4f4f;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 12px;
+    }
+
+    #resetButton:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
