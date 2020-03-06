@@ -17,20 +17,19 @@
         <br>
         <br>
     </div>
-    <div>
-        <div>
-            <input type="button" value="COOKIE COUNTER" id="countButton" />
-            <!-- <button class="cookieCounter" type="button">COOKIE COUNTER</button> -->
-            <br>
-            <br>
-            Your click count is  <b><span id="displayCount">0</span></b>. 
-            <br>
-            <br>
-            <input type="button" value="RESET" id="resetButton" />
-            <!-- <button class="resetButton" type="button">RESET</button> -->
-            </div>
-
+   
+    <div class="container">
+        <section class="cookie_dashboard">
+            <div class="dashboard__cookieCounter">initial cookie click count</div>
+        </section>
+        <section class="cookie_control">
+            <button class="cookie__clicker">Add Cookies</button>
+            <button class="cookie_reset">Reset Cookies</button>
+        </section>
     </div>
+
     <script src="/src/js/app.js"></script>
+    <script src="/src/js/cookie.js"></script>
+
 </body>
 </html>
