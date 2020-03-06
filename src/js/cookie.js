@@ -8,7 +8,8 @@ class Cookie {
     }
 
     cookieReset() { 
-        this._clicker = 0;  
+        this._clicker = 0; 
+         
     }
 
     getCookieCount() {
