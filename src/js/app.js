@@ -22,16 +22,24 @@ const updateClicker = (dashboardElement, cookieObject) => {
     dashboardElement.innerText = cookieObject.getCookieCount();
 }
 
-const makeAcceleratorButton = (buttonClickElement, dashboardElement, cookieObject) => {
+const makeCookieClickerButton = (buttonClickElement, dashboardElement, cookieObject) => {
     buttonClickElement.addEventListener('click', ()=>{
         cookieObject.cookieCounter();
         updateClicker(dashboardElement, cookieObject);
     })
 }
 
-const buttonClickElement = document.querySelector('.floorboard__accelerator');
-const dashboardElement = document.querySelector('.dashboard__cookieCounter');
+const buttonClickElement = document.querySelector('.cookie_clicker');
+const dashboardElement = document.querySelector('.dashboard_cookieCounter');
 const myCookie = new Cookie();
+const buttonResetElement = document.querySelector('.cookie_reset');
 
-makeAcceleratorButton(buttonClickElement, dashboardElement, myCookie);
+const resetClicker = (buttonClickElement, dashboardElement, cookieObject) => {
+    buttonClickElement.addEventListener('click', ()=>{
+        cookieObject.cookieReset();
+        updateClicker(dashboardElement, cookieObject);
+    })
+}
+makeCookieClickerButton(buttonClickElement, dashboardElement, myCookie);
 updateClicker(dashboardElement, myCookie);
+resetClicker(buttonResetElement, dashboardElement, myCookie);
